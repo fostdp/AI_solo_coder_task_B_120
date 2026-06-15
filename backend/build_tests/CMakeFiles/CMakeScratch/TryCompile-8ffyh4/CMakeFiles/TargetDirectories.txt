@@ -1,3 +1,0 @@
-D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests/CMakeFiles/CMakeScratch/TryCompile-8ffyh4/CMakeFiles/cmTC_81643.dir
-D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests/CMakeFiles/CMakeScratch/TryCompile-8ffyh4/CMakeFiles/edit_cache.dir
-D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests/CMakeFiles/CMakeScratch/TryCompile-8ffyh4/CMakeFiles/rebuild_cache.dir

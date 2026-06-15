@@ -1,0 +1,326 @@
+[
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe -DCLICKHOUSE_MOCK=1 -DHAS_PROMETHEUS -DHAS_SPDLOG -DMQTT_MOCK=1 -DSPDLOG_COMPILED_LIB @CMakeFiles/crossbow_backend.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\crossbow_backend.dir\\src\\main.cpp.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\src\\main.cpp",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/src/main.cpp",
+  "output": "CMakeFiles/crossbow_backend.dir/src/main.cpp.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe -DCLICKHOUSE_MOCK=1 -DHAS_PROMETHEUS -DHAS_SPDLOG -DMQTT_MOCK=1 -DSPDLOG_COMPILED_LIB @CMakeFiles/crossbow_backend.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\crossbow_backend.dir\\src\\dynamics_model.cpp.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\src\\dynamics_model.cpp",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/src/dynamics_model.cpp",
+  "output": "CMakeFiles/crossbow_backend.dir/src/dynamics_model.cpp.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe -DCLICKHOUSE_MOCK=1 -DHAS_PROMETHEUS -DHAS_SPDLOG -DMQTT_MOCK=1 -DSPDLOG_COMPILED_LIB @CMakeFiles/crossbow_backend.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\crossbow_backend.dir\\src\\clickhouse_storage.cpp.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\src\\clickhouse_storage.cpp",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/src/clickhouse_storage.cpp",
+  "output": "CMakeFiles/crossbow_backend.dir/src/clickhouse_storage.cpp.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe -DCLICKHOUSE_MOCK=1 -DHAS_PROMETHEUS -DHAS_SPDLOG -DMQTT_MOCK=1 -DSPDLOG_COMPILED_LIB @CMakeFiles/crossbow_backend.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\crossbow_backend.dir\\src\\udp_receiver.cpp.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\src\\udp_receiver.cpp",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/src/udp_receiver.cpp",
+  "output": "CMakeFiles/crossbow_backend.dir/src/udp_receiver.cpp.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe -DCLICKHOUSE_MOCK=1 -DHAS_PROMETHEUS -DHAS_SPDLOG -DMQTT_MOCK=1 -DSPDLOG_COMPILED_LIB @CMakeFiles/crossbow_backend.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\crossbow_backend.dir\\src\\accuracy_analyzer.cpp.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\src\\accuracy_analyzer.cpp",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/src/accuracy_analyzer.cpp",
+  "output": "CMakeFiles/crossbow_backend.dir/src/accuracy_analyzer.cpp.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe -DCLICKHOUSE_MOCK=1 -DHAS_PROMETHEUS -DHAS_SPDLOG -DMQTT_MOCK=1 -DSPDLOG_COMPILED_LIB @CMakeFiles/crossbow_backend.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\crossbow_backend.dir\\src\\http_server.cpp.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\src\\http_server.cpp",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/src/http_server.cpp",
+  "output": "CMakeFiles/crossbow_backend.dir/src/http_server.cpp.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe -DCLICKHOUSE_MOCK=1 -DHAS_PROMETHEUS -DHAS_SPDLOG -DMQTT_MOCK=1 -DSPDLOG_COMPILED_LIB @CMakeFiles/crossbow_backend.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\crossbow_backend.dir\\src\\ballistic_simulator.cpp.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\src\\ballistic_simulator.cpp",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/src/ballistic_simulator.cpp",
+  "output": "CMakeFiles/crossbow_backend.dir/src/ballistic_simulator.cpp.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe -DCLICKHOUSE_MOCK=1 -DHAS_PROMETHEUS -DHAS_SPDLOG -DMQTT_MOCK=1 -DSPDLOG_COMPILED_LIB @CMakeFiles/crossbow_backend.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\crossbow_backend.dir\\src\\accuracy_analyzer_service.cpp.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\src\\accuracy_analyzer_service.cpp",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/src/accuracy_analyzer_service.cpp",
+  "output": "CMakeFiles/crossbow_backend.dir/src/accuracy_analyzer_service.cpp.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe -DCLICKHOUSE_MOCK=1 -DHAS_PROMETHEUS -DHAS_SPDLOG -DMQTT_MOCK=1 -DSPDLOG_COMPILED_LIB @CMakeFiles/crossbow_backend.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\crossbow_backend.dir\\src\\alarm_mqtt_service.cpp.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\src\\alarm_mqtt_service.cpp",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/src/alarm_mqtt_service.cpp",
+  "output": "CMakeFiles/crossbow_backend.dir/src/alarm_mqtt_service.cpp.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe -DCLICKHOUSE_MOCK=1 -DHAS_PROMETHEUS -DHAS_SPDLOG -DMQTT_MOCK=1 -DSPDLOG_COMPILED_LIB @CMakeFiles/crossbow_backend.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\crossbow_backend.dir\\src\\mqtt_alert_manager.cpp.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\src\\mqtt_alert_manager.cpp",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/src/mqtt_alert_manager.cpp",
+  "output": "CMakeFiles/crossbow_backend.dir/src/mqtt_alert_manager.cpp.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe -DCLICKHOUSE_MOCK=1 -DHAS_PROMETHEUS -DHAS_SPDLOG -DMQTT_MOCK=1 -DSPDLOG_COMPILED_LIB @CMakeFiles/crossbow_backend.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\crossbow_backend.dir\\src\\logger.cpp.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\src\\logger.cpp",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/src/logger.cpp",
+  "output": "CMakeFiles/crossbow_backend.dir/src/logger.cpp.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe -DCLICKHOUSE_MOCK=1 -DHAS_PROMETHEUS -DHAS_SPDLOG -DMQTT_MOCK=1 -DSPDLOG_COMPILED_LIB @CMakeFiles/crossbow_backend.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\crossbow_backend.dir\\src\\metrics.cpp.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\src\\metrics.cpp",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/src/metrics.cpp",
+  "output": "CMakeFiles/crossbow_backend.dir/src/metrics.cpp.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe -DCLICKHOUSE_MOCK=1 -DHAS_PROMETHEUS -DHAS_SPDLOG -DMQTT_MOCK=1 -DSPDLOG_COMPILED_LIB @CMakeFiles/crossbow_backend.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\crossbow_backend.dir\\src\\bowstring_material.cpp.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\src\\bowstring_material.cpp",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/src/bowstring_material.cpp",
+  "output": "CMakeFiles/crossbow_backend.dir/src/bowstring_material.cpp.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe -DCLICKHOUSE_MOCK=1 -DHAS_PROMETHEUS -DHAS_SPDLOG -DMQTT_MOCK=1 -DSPDLOG_COMPILED_LIB @CMakeFiles/crossbow_backend.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\crossbow_backend.dir\\src\\sight_optics.cpp.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\src\\sight_optics.cpp",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/src/sight_optics.cpp",
+  "output": "CMakeFiles/crossbow_backend.dir/src/sight_optics.cpp.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe -DCLICKHOUSE_MOCK=1 -DHAS_PROMETHEUS -DHAS_SPDLOG -DMQTT_MOCK=1 -DSPDLOG_COMPILED_LIB @CMakeFiles/crossbow_backend.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\crossbow_backend.dir\\src\\formation_simulator.cpp.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\src\\formation_simulator.cpp",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/src/formation_simulator.cpp",
+  "output": "CMakeFiles/crossbow_backend.dir/src/formation_simulator.cpp.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe -DCLICKHOUSE_MOCK=1 -DMQTT_MOCK=1 @CMakeFiles/crossbow_backend_tests.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\crossbow_backend_tests.dir\\tests\\test_main.cpp.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\tests\\test_main.cpp",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/tests/test_main.cpp",
+  "output": "CMakeFiles/crossbow_backend_tests.dir/tests/test_main.cpp.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe -DCLICKHOUSE_MOCK=1 -DMQTT_MOCK=1 @CMakeFiles/crossbow_backend_tests.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\crossbow_backend_tests.dir\\tests\\test_bowstring.cpp.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\tests\\test_bowstring.cpp",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/tests/test_bowstring.cpp",
+  "output": "CMakeFiles/crossbow_backend_tests.dir/tests/test_bowstring.cpp.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe -DCLICKHOUSE_MOCK=1 -DMQTT_MOCK=1 @CMakeFiles/crossbow_backend_tests.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\crossbow_backend_tests.dir\\tests\\test_sight_optics.cpp.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\tests\\test_sight_optics.cpp",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/tests/test_sight_optics.cpp",
+  "output": "CMakeFiles/crossbow_backend_tests.dir/tests/test_sight_optics.cpp.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe -DCLICKHOUSE_MOCK=1 -DMQTT_MOCK=1 @CMakeFiles/crossbow_backend_tests.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\crossbow_backend_tests.dir\\tests\\test_formation.cpp.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\tests\\test_formation.cpp",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/tests/test_formation.cpp",
+  "output": "CMakeFiles/crossbow_backend_tests.dir/tests/test_formation.cpp.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe -DCLICKHOUSE_MOCK=1 -DMQTT_MOCK=1 @CMakeFiles/crossbow_backend_tests.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\crossbow_backend_tests.dir\\tests\\test_shooting.cpp.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\tests\\test_shooting.cpp",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/tests/test_shooting.cpp",
+  "output": "CMakeFiles/crossbow_backend_tests.dir/tests/test_shooting.cpp.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe -DCLICKHOUSE_MOCK=1 -DMQTT_MOCK=1 @CMakeFiles/crossbow_backend_tests.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\crossbow_backend_tests.dir\\src\\bowstring_material.cpp.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\src\\bowstring_material.cpp",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/src/bowstring_material.cpp",
+  "output": "CMakeFiles/crossbow_backend_tests.dir/src/bowstring_material.cpp.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe -DCLICKHOUSE_MOCK=1 -DMQTT_MOCK=1 @CMakeFiles/crossbow_backend_tests.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\crossbow_backend_tests.dir\\src\\sight_optics.cpp.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\src\\sight_optics.cpp",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/src/sight_optics.cpp",
+  "output": "CMakeFiles/crossbow_backend_tests.dir/src/sight_optics.cpp.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe -DCLICKHOUSE_MOCK=1 -DMQTT_MOCK=1 @CMakeFiles/crossbow_backend_tests.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\crossbow_backend_tests.dir\\src\\formation_simulator.cpp.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\src\\formation_simulator.cpp",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/src/formation_simulator.cpp",
+  "output": "CMakeFiles/crossbow_backend_tests.dir/src/formation_simulator.cpp.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe -DCLICKHOUSE_MOCK=1 -DMQTT_MOCK=1 @CMakeFiles/crossbow_backend_tests.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\crossbow_backend_tests.dir\\src\\dynamics_model.cpp.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\src\\dynamics_model.cpp",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/src/dynamics_model.cpp",
+  "output": "CMakeFiles/crossbow_backend_tests.dir/src/dynamics_model.cpp.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe -DCLICKHOUSE_MOCK=1 -DMQTT_MOCK=1 @CMakeFiles/crossbow_backend_tests.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\crossbow_backend_tests.dir\\src\\logger.cpp.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\src\\logger.cpp",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/src/logger.cpp",
+  "output": "CMakeFiles/crossbow_backend_tests.dir/src/logger.cpp.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe -DCLICKHOUSE_MOCK=1 -DMQTT_MOCK=1 @CMakeFiles/crossbow_backend_tests.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\crossbow_backend_tests.dir\\src\\metrics.cpp.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\src\\metrics.cpp",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/src/metrics.cpp",
+  "output": "CMakeFiles/crossbow_backend_tests.dir/src/metrics.cpp.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/spdlog-build",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe -DSPDLOG_COMPILED_LIB @CMakeFiles/spdlog.dir/includes_CXX.rsp -O3 -DNDEBUG -std=c++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\spdlog.dir\\src\\spdlog.cpp.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\build_tests2\\_deps\\spdlog-src\\src\\spdlog.cpp",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/spdlog-src/src/spdlog.cpp",
+  "output": "_deps/spdlog-build/CMakeFiles/spdlog.dir/src/spdlog.cpp.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/spdlog-build",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe -DSPDLOG_COMPILED_LIB @CMakeFiles/spdlog.dir/includes_CXX.rsp -O3 -DNDEBUG -std=c++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\spdlog.dir\\src\\stdout_sinks.cpp.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\build_tests2\\_deps\\spdlog-src\\src\\stdout_sinks.cpp",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/spdlog-src/src/stdout_sinks.cpp",
+  "output": "_deps/spdlog-build/CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/spdlog-build",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe -DSPDLOG_COMPILED_LIB @CMakeFiles/spdlog.dir/includes_CXX.rsp -O3 -DNDEBUG -std=c++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\spdlog.dir\\src\\color_sinks.cpp.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\build_tests2\\_deps\\spdlog-src\\src\\color_sinks.cpp",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/spdlog-src/src/color_sinks.cpp",
+  "output": "_deps/spdlog-build/CMakeFiles/spdlog.dir/src/color_sinks.cpp.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/spdlog-build",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe -DSPDLOG_COMPILED_LIB @CMakeFiles/spdlog.dir/includes_CXX.rsp -O3 -DNDEBUG -std=c++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\spdlog.dir\\src\\file_sinks.cpp.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\build_tests2\\_deps\\spdlog-src\\src\\file_sinks.cpp",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/spdlog-src/src/file_sinks.cpp",
+  "output": "_deps/spdlog-build/CMakeFiles/spdlog.dir/src/file_sinks.cpp.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/spdlog-build",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe -DSPDLOG_COMPILED_LIB @CMakeFiles/spdlog.dir/includes_CXX.rsp -O3 -DNDEBUG -std=c++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\spdlog.dir\\src\\async.cpp.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\build_tests2\\_deps\\spdlog-src\\src\\async.cpp",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/spdlog-src/src/async.cpp",
+  "output": "_deps/spdlog-build/CMakeFiles/spdlog.dir/src/async.cpp.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/spdlog-build",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe -DSPDLOG_COMPILED_LIB @CMakeFiles/spdlog.dir/includes_CXX.rsp -O3 -DNDEBUG -std=c++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\spdlog.dir\\src\\cfg.cpp.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\build_tests2\\_deps\\spdlog-src\\src\\cfg.cpp",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/spdlog-src/src/cfg.cpp",
+  "output": "_deps/spdlog-build/CMakeFiles/spdlog.dir/src/cfg.cpp.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/spdlog-build",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe -DSPDLOG_COMPILED_LIB @CMakeFiles/spdlog.dir/includes_CXX.rsp -O3 -DNDEBUG -std=c++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\spdlog.dir\\src\\bundled_fmtlib_format.cpp.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\build_tests2\\_deps\\spdlog-src\\src\\bundled_fmtlib_format.cpp",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/spdlog-src/src/bundled_fmtlib_format.cpp",
+  "output": "_deps/spdlog-build/CMakeFiles/spdlog.dir/src/bundled_fmtlib_format.cpp.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/prometheus-cpp-build/core",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe  @CMakeFiles/core.dir/includes_CXX.rsp -O3 -DNDEBUG -std=c++14 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\core.dir\\src\\check_names.cc.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\build_tests2\\_deps\\prometheus-cpp-src\\core\\src\\check_names.cc",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/prometheus-cpp-src/core/src/check_names.cc",
+  "output": "_deps/prometheus-cpp-build/core/CMakeFiles/core.dir/src/check_names.cc.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/prometheus-cpp-build/core",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe  @CMakeFiles/core.dir/includes_CXX.rsp -O3 -DNDEBUG -std=c++14 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\core.dir\\src\\counter.cc.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\build_tests2\\_deps\\prometheus-cpp-src\\core\\src\\counter.cc",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/prometheus-cpp-src/core/src/counter.cc",
+  "output": "_deps/prometheus-cpp-build/core/CMakeFiles/core.dir/src/counter.cc.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/prometheus-cpp-build/core",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe  @CMakeFiles/core.dir/includes_CXX.rsp -O3 -DNDEBUG -std=c++14 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\core.dir\\src\\detail\\builder.cc.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\build_tests2\\_deps\\prometheus-cpp-src\\core\\src\\detail\\builder.cc",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/prometheus-cpp-src/core/src/detail/builder.cc",
+  "output": "_deps/prometheus-cpp-build/core/CMakeFiles/core.dir/src/detail/builder.cc.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/prometheus-cpp-build/core",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe  @CMakeFiles/core.dir/includes_CXX.rsp -O3 -DNDEBUG -std=c++14 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\core.dir\\src\\detail\\ckms_quantiles.cc.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\build_tests2\\_deps\\prometheus-cpp-src\\core\\src\\detail\\ckms_quantiles.cc",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/prometheus-cpp-src/core/src/detail/ckms_quantiles.cc",
+  "output": "_deps/prometheus-cpp-build/core/CMakeFiles/core.dir/src/detail/ckms_quantiles.cc.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/prometheus-cpp-build/core",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe  @CMakeFiles/core.dir/includes_CXX.rsp -O3 -DNDEBUG -std=c++14 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\core.dir\\src\\detail\\time_window_quantiles.cc.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\build_tests2\\_deps\\prometheus-cpp-src\\core\\src\\detail\\time_window_quantiles.cc",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/prometheus-cpp-src/core/src/detail/time_window_quantiles.cc",
+  "output": "_deps/prometheus-cpp-build/core/CMakeFiles/core.dir/src/detail/time_window_quantiles.cc.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/prometheus-cpp-build/core",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe  @CMakeFiles/core.dir/includes_CXX.rsp -O3 -DNDEBUG -std=c++14 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\core.dir\\src\\detail\\utils.cc.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\build_tests2\\_deps\\prometheus-cpp-src\\core\\src\\detail\\utils.cc",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/prometheus-cpp-src/core/src/detail/utils.cc",
+  "output": "_deps/prometheus-cpp-build/core/CMakeFiles/core.dir/src/detail/utils.cc.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/prometheus-cpp-build/core",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe  @CMakeFiles/core.dir/includes_CXX.rsp -O3 -DNDEBUG -std=c++14 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\core.dir\\src\\family.cc.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\build_tests2\\_deps\\prometheus-cpp-src\\core\\src\\family.cc",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/prometheus-cpp-src/core/src/family.cc",
+  "output": "_deps/prometheus-cpp-build/core/CMakeFiles/core.dir/src/family.cc.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/prometheus-cpp-build/core",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe  @CMakeFiles/core.dir/includes_CXX.rsp -O3 -DNDEBUG -std=c++14 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\core.dir\\src\\gauge.cc.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\build_tests2\\_deps\\prometheus-cpp-src\\core\\src\\gauge.cc",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/prometheus-cpp-src/core/src/gauge.cc",
+  "output": "_deps/prometheus-cpp-build/core/CMakeFiles/core.dir/src/gauge.cc.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/prometheus-cpp-build/core",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe  @CMakeFiles/core.dir/includes_CXX.rsp -O3 -DNDEBUG -std=c++14 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\core.dir\\src\\histogram.cc.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\build_tests2\\_deps\\prometheus-cpp-src\\core\\src\\histogram.cc",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/prometheus-cpp-src/core/src/histogram.cc",
+  "output": "_deps/prometheus-cpp-build/core/CMakeFiles/core.dir/src/histogram.cc.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/prometheus-cpp-build/core",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe  @CMakeFiles/core.dir/includes_CXX.rsp -O3 -DNDEBUG -std=c++14 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\core.dir\\src\\info.cc.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\build_tests2\\_deps\\prometheus-cpp-src\\core\\src\\info.cc",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/prometheus-cpp-src/core/src/info.cc",
+  "output": "_deps/prometheus-cpp-build/core/CMakeFiles/core.dir/src/info.cc.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/prometheus-cpp-build/core",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe  @CMakeFiles/core.dir/includes_CXX.rsp -O3 -DNDEBUG -std=c++14 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\core.dir\\src\\registry.cc.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\build_tests2\\_deps\\prometheus-cpp-src\\core\\src\\registry.cc",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/prometheus-cpp-src/core/src/registry.cc",
+  "output": "_deps/prometheus-cpp-build/core/CMakeFiles/core.dir/src/registry.cc.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/prometheus-cpp-build/core",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe  @CMakeFiles/core.dir/includes_CXX.rsp -O3 -DNDEBUG -std=c++14 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\core.dir\\src\\serializer.cc.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\build_tests2\\_deps\\prometheus-cpp-src\\core\\src\\serializer.cc",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/prometheus-cpp-src/core/src/serializer.cc",
+  "output": "_deps/prometheus-cpp-build/core/CMakeFiles/core.dir/src/serializer.cc.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/prometheus-cpp-build/core",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe  @CMakeFiles/core.dir/includes_CXX.rsp -O3 -DNDEBUG -std=c++14 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\core.dir\\src\\summary.cc.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\build_tests2\\_deps\\prometheus-cpp-src\\core\\src\\summary.cc",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/prometheus-cpp-src/core/src/summary.cc",
+  "output": "_deps/prometheus-cpp-build/core/CMakeFiles/core.dir/src/summary.cc.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/prometheus-cpp-build/core",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe  @CMakeFiles/core.dir/includes_CXX.rsp -O3 -DNDEBUG -std=c++14 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\core.dir\\src\\text_serializer.cc.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\build_tests2\\_deps\\prometheus-cpp-src\\core\\src\\text_serializer.cc",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/prometheus-cpp-src/core/src/text_serializer.cc",
+  "output": "_deps/prometheus-cpp-build/core/CMakeFiles/core.dir/src/text_serializer.cc.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/prometheus-cpp-build/pull",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe -DCIVETWEB_API=\"\" -DNDEBUG -DNO_CACHING -DNO_CGI -DNO_FILES -DNO_SSL -DSOCKET_TIMEOUT_QUANTUM=200 -DUSE_IPV6 @CMakeFiles/civetweb.dir/includes_CXX.rsp -O3 -DNDEBUG -std=c++14 -Wall -Wextra -Wpedantic -Wno-unused-parameter -w -o CMakeFiles\\civetweb.dir\\__\\3rdparty\\civetweb\\src\\CivetServer.cpp.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\build_tests2\\_deps\\prometheus-cpp-src\\3rdparty\\civetweb\\src\\CivetServer.cpp",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/prometheus-cpp-src/3rdparty/civetweb/src/CivetServer.cpp",
+  "output": "_deps/prometheus-cpp-build/pull/CMakeFiles/civetweb.dir/__/3rdparty/civetweb/src/CivetServer.cpp.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/prometheus-cpp-build/pull",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\gcc.exe -DCIVETWEB_API=\"\" -DNDEBUG -DNO_CACHING -DNO_CGI -DNO_FILES -DNO_SSL -DSOCKET_TIMEOUT_QUANTUM=200 -DUSE_IPV6 @CMakeFiles/civetweb.dir/includes_C.rsp -O3 -DNDEBUG -Wall -Wextra -Wpedantic -Wno-unused-parameter -w -o CMakeFiles\\civetweb.dir\\__\\3rdparty\\civetweb\\src\\civetweb.c.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\build_tests2\\_deps\\prometheus-cpp-src\\3rdparty\\civetweb\\src\\civetweb.c",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/prometheus-cpp-src/3rdparty/civetweb/src/civetweb.c",
+  "output": "_deps/prometheus-cpp-build/pull/CMakeFiles/civetweb.dir/__/3rdparty/civetweb/src/civetweb.c.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/prometheus-cpp-build/pull",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe  @CMakeFiles/pull.dir/includes_CXX.rsp -O3 -DNDEBUG -std=c++14 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\pull.dir\\src\\basic_auth.cc.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\build_tests2\\_deps\\prometheus-cpp-src\\pull\\src\\basic_auth.cc",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/prometheus-cpp-src/pull/src/basic_auth.cc",
+  "output": "_deps/prometheus-cpp-build/pull/CMakeFiles/pull.dir/src/basic_auth.cc.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/prometheus-cpp-build/pull",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe  @CMakeFiles/pull.dir/includes_CXX.rsp -O3 -DNDEBUG -std=c++14 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\pull.dir\\src\\endpoint.cc.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\build_tests2\\_deps\\prometheus-cpp-src\\pull\\src\\endpoint.cc",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/prometheus-cpp-src/pull/src/endpoint.cc",
+  "output": "_deps/prometheus-cpp-build/pull/CMakeFiles/pull.dir/src/endpoint.cc.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/prometheus-cpp-build/pull",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe  @CMakeFiles/pull.dir/includes_CXX.rsp -O3 -DNDEBUG -std=c++14 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\pull.dir\\src\\exposer.cc.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\build_tests2\\_deps\\prometheus-cpp-src\\pull\\src\\exposer.cc",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/prometheus-cpp-src/pull/src/exposer.cc",
+  "output": "_deps/prometheus-cpp-build/pull/CMakeFiles/pull.dir/src/exposer.cc.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/prometheus-cpp-build/pull",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe  @CMakeFiles/pull.dir/includes_CXX.rsp -O3 -DNDEBUG -std=c++14 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\pull.dir\\src\\handler.cc.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\build_tests2\\_deps\\prometheus-cpp-src\\pull\\src\\handler.cc",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/prometheus-cpp-src/pull/src/handler.cc",
+  "output": "_deps/prometheus-cpp-build/pull/CMakeFiles/pull.dir/src/handler.cc.obj"
+},
+{
+  "directory": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/prometheus-cpp-build/pull",
+  "command": "C:\\Users\\y\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\c++.exe  @CMakeFiles/pull.dir/includes_CXX.rsp -O3 -DNDEBUG -std=c++14 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles\\pull.dir\\src\\metrics_collector.cc.obj -c D:\\SOLO-2\\AI_solo_coder_task_B_120\\backend\\build_tests2\\_deps\\prometheus-cpp-src\\pull\\src\\metrics_collector.cc",
+  "file": "D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests2/_deps/prometheus-cpp-src/pull/src/metrics_collector.cc",
+  "output": "_deps/prometheus-cpp-build/pull/CMakeFiles/pull.dir/src/metrics_collector.cc.obj"
+}
+]

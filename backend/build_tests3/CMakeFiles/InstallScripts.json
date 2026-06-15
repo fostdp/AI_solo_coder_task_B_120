@@ -1,0 +1,11 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests3/cmake_install.cmake",
+		"D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests3/_deps/spdlog-build/cmake_install.cmake",
+		"D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests3/_deps/prometheus-cpp-build/cmake_install.cmake",
+		"D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests3/_deps/prometheus-cpp-build/core/cmake_install.cmake",
+		"D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_tests3/_deps/prometheus-cpp-build/pull/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

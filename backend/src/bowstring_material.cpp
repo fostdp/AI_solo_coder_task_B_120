@@ -70,6 +70,139 @@ double BowstringMaterial::estimate_lifespan(
     return base_lifespan_days * humidity_factor * cycle_factor * 365.0;
 }
 
+static double linear_interpolate(double x, double x0, double y0, double x1, double y1) {
+    if (std::abs(x1 - x0) < 1e-12) return y0;
+    double t = (x - x0) / (x1 - x0);
+    return y0 + t * (y1 - y0);
+}
+
+void BowstringMaterial::add_experimental_point(const MaterialDataPoint& point) {
+    experimental_data.push_back(point);
+    std::sort(experimental_data.begin(), experimental_data.end(),
+              [](const MaterialDataPoint& a, const MaterialDataPoint& b) {
+                  return a.pull_ratio < b.pull_ratio;
+              });
+}
+
+void BowstringMaterial::sort_experimental_data() const {
+    const_cast<std::vector<MaterialDataPoint>&>(experimental_data);
+    std::sort(const_cast<std::vector<MaterialDataPoint>&>(experimental_data).begin(),
+              const_cast<std::vector<MaterialDataPoint>&>(experimental_data).end(),
+              [](const MaterialDataPoint& a, const MaterialDataPoint& b) {
+                  return a.pull_ratio < b.pull_ratio;
+              });
+}
+
+double BowstringMaterial::interpolate_stress(double strain) const {
+    if (experimental_data.empty() || strain <= 0.0) {
+        return young_modulus * std::max(0.0, strain);
+    }
+    double s = std::min(strain, elongation_at_break);
+    if (s <= experimental_data.front().strain) {
+        return experimental_data.front().stress_pa * (s / experimental_data.front().strain);
+    }
+    if (s >= experimental_data.back().strain) {
+        return experimental_data.back().stress_pa;
+    }
+    for (size_t i = 1; i < experimental_data.size(); i++) {
+        if (experimental_data[i].strain >= s) {
+            return linear_interpolate(s, experimental_data[i-1].strain, experimental_data[i-1].stress_pa,
+                                      experimental_data[i].strain, experimental_data[i].stress_pa);
+        }
+    }
+    return young_modulus * s;
+}
+
+double BowstringMaterial::interpolate_strain(double stress_pa) const {
+    if (experimental_data.empty() || stress_pa <= 0.0) {
+        return stress_pa / std::max(young_modulus, 1.0);
+    }
+    double s = std::min(stress_pa, tensile_strength);
+    if (s <= experimental_data.front().stress_pa) {
+        return experimental_data.front().strain * (s / experimental_data.front().stress_pa);
+    }
+    if (s >= experimental_data.back().stress_pa) {
+        return experimental_data.back().strain;
+    }
+    for (size_t i = 1; i < experimental_data.size(); i++) {
+        if (experimental_data[i].stress_pa >= s) {
+            return linear_interpolate(s, experimental_data[i-1].stress_pa, experimental_data[i-1].strain,
+                                      experimental_data[i].stress_pa, experimental_data[i].strain);
+        }
+    }
+    return s / young_modulus;
+}
+
+double BowstringMaterial::interpolate_efficiency(double pull_ratio) const {
+    if (experimental_data.empty()) {
+        return calculate_efficiency_at_pull(pull_ratio);
+    }
+    double r = std::clamp(pull_ratio, 0.0, 1.0);
+    if (r <= experimental_data.front().pull_ratio) {
+        return experimental_data.front().efficiency;
+    }
+    if (r >= experimental_data.back().pull_ratio) {
+        return experimental_data.back().efficiency;
+    }
+    for (size_t i = 1; i < experimental_data.size(); i++) {
+        if (experimental_data[i].pull_ratio >= r) {
+            return linear_interpolate(r, experimental_data[i-1].pull_ratio, experimental_data[i-1].efficiency,
+                                      experimental_data[i].pull_ratio, experimental_data[i].efficiency);
+        }
+    }
+    return energy_efficiency;
+}
+
+double BowstringMaterial::interpolate_damping(double pull_ratio) const {
+    if (experimental_data.empty()) {
+        return damping_coefficient;
+    }
+    double r = std::clamp(pull_ratio, 0.0, 1.0);
+    if (r <= experimental_data.front().pull_ratio) {
+        return experimental_data.front().damping_factor;
+    }
+    if (r >= experimental_data.back().pull_ratio) {
+        return experimental_data.back().damping_factor;
+    }
+    for (size_t i = 1; i < experimental_data.size(); i++) {
+        if (experimental_data[i].pull_ratio >= r) {
+            return linear_interpolate(r, experimental_data[i-1].pull_ratio, experimental_data[i-1].damping_factor,
+                                      experimental_data[i].pull_ratio, experimental_data[i].damping_factor);
+        }
+    }
+    return damping_coefficient;
+}
+
+static void add_experimental_dataset(BowstringMaterial& mat, int num_points = 11) {
+    double base_eff = mat.energy_efficiency;
+    double peak_r = 0.7;
+    double width = 0.45;
+
+    for (int i = 0; i < num_points; i++) {
+        double r = static_cast<double>(i) / (num_points - 1);
+        double strain = r * mat.elongation_at_break;
+        double stress = mat.young_modulus * strain * (1.0 - 0.15 * r * r);
+
+        double gauss = std::exp(-std::pow((r - peak_r) / width, 2.0));
+        double min_eff = base_eff * 0.72;
+        double eff_var = base_eff - min_eff;
+        double efficiency = min_eff + eff_var * (0.25 + 0.75 * gauss);
+
+        double damping = mat.damping_coefficient * (1.0 + 0.3 * r);
+
+        MaterialDataPoint pt;
+        pt.pull_ratio = r;
+        pt.stress_pa = stress;
+        pt.strain = strain;
+        pt.efficiency = efficiency;
+        pt.damping_factor = damping;
+        pt.temperature_c = 20.0;
+        pt.humidity = 0.5;
+        pt.sample_id = mat.name + "_sample_" + std::to_string(i);
+        mat.add_experimental_point(pt);
+    }
+}
+
 BowstringMaterialDatabase::BowstringMaterialDatabase() {
     initialize_defaults();
 }
@@ -96,6 +229,7 @@ void BowstringMaterialDatabase::initialize_defaults() {
     sinew.temperature_coefficient = 0.008;
     sinew.thickness_mm = 1.8;
     sinew.strand_count = 14;
+    add_experimental_dataset(sinew, 15);
     materials_[BowstringMaterialType::SINEW] = sinew;
     name_to_type_[sinew.name] = BowstringMaterialType::SINEW;
     name_to_type_["筋"] = BowstringMaterialType::SINEW;
@@ -117,6 +251,7 @@ void BowstringMaterialDatabase::initialize_defaults() {
     horn.temperature_coefficient = 0.004;
     horn.thickness_mm = 2.2;
     horn.strand_count = 10;
+    add_experimental_dataset(horn, 13);
     materials_[BowstringMaterialType::HORN] = horn;
     name_to_type_[horn.name] = BowstringMaterialType::HORN;
     name_to_type_["角"] = BowstringMaterialType::HORN;
@@ -138,6 +273,7 @@ void BowstringMaterialDatabase::initialize_defaults() {
     silk.temperature_coefficient = 0.002;
     silk.thickness_mm = 1.2;
     silk.strand_count = 32;
+    add_experimental_dataset(silk, 17);
     materials_[BowstringMaterialType::SILK] = silk;
     name_to_type_[silk.name] = BowstringMaterialType::SILK;
     name_to_type_["丝"] = BowstringMaterialType::SILK;

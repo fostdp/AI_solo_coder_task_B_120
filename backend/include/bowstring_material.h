@@ -18,6 +18,17 @@ enum class BowstringMaterialType {
     CUSTOM = 99
 };
 
+struct MaterialDataPoint {
+    double pull_ratio;
+    double stress_pa;
+    double strain;
+    double efficiency;
+    double damping_factor;
+    double temperature_c;
+    double humidity;
+    std::string sample_id;
+};
+
 struct BowstringMaterial {
     BowstringMaterialType type;
     std::string name;
@@ -37,6 +48,8 @@ struct BowstringMaterial {
     double thickness_mm;
     int strand_count;
 
+    std::vector<MaterialDataPoint> experimental_data;
+
     double calculate_string_mass(double length_m) const;
     double calculate_stiffness(double length_m, double cross_section_m2) const;
     double calculate_wave_speed(double tension_N, double linear_density) const;
@@ -44,6 +57,14 @@ struct BowstringMaterial {
     double calculate_efficiency_at_pull(double pull_ratio) const;
     double calculate_creep_factor(double hours_under_load, double temperature_c) const;
     double estimate_lifespan(int cycles_per_day, double avg_humidity) const;
+
+    double interpolate_stress(double strain) const;
+    double interpolate_strain(double stress_pa) const;
+    double interpolate_efficiency(double pull_ratio) const;
+    double interpolate_damping(double pull_ratio) const;
+    void add_experimental_point(const MaterialDataPoint& point);
+    void sort_experimental_data() const;
+    bool has_experimental_data() const { return !experimental_data.empty(); }
 };
 
 struct MaterialComparisonResult {
