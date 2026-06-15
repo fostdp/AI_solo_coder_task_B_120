@@ -1,0 +1,17 @@
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_sight_test/CMakeFiles/crossbow_backend.dir
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_sight_test/CMakeFiles/crossbow_backend_tests.dir
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_sight_test/CMakeFiles/test.dir
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_sight_test/CMakeFiles/edit_cache.dir
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_sight_test/CMakeFiles/rebuild_cache.dir
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_sight_test/CMakeFiles/list_install_components.dir
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_sight_test/CMakeFiles/install.dir
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_sight_test/CMakeFiles/install/local.dir
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_sight_test/CMakeFiles/install/strip.dir
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_sight_test/_deps/spdlog-build/CMakeFiles/spdlog.dir
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_sight_test/_deps/spdlog-build/CMakeFiles/test.dir
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_sight_test/_deps/spdlog-build/CMakeFiles/edit_cache.dir
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_sight_test/_deps/spdlog-build/CMakeFiles/rebuild_cache.dir
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_sight_test/_deps/spdlog-build/CMakeFiles/list_install_components.dir
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_sight_test/_deps/spdlog-build/CMakeFiles/install.dir
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_sight_test/_deps/spdlog-build/CMakeFiles/install/local.dir
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_sight_test/_deps/spdlog-build/CMakeFiles/install/strip.dir

@@ -340,7 +340,8 @@ std::pair<double, double> OpticalErrorSimulator::calculate_glare_effect(
 }
 
 double OpticalErrorSimulator::sample_normal(double mean, double stddev) const {
-    std::normal_distribution<double> dist(mean, stddev);
+    double safe_stddev = std::max(stddev, 1e-9);
+    std::normal_distribution<double> dist(mean, safe_stddev);
     return dist(rng_);
 }
 

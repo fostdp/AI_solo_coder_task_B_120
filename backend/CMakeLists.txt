@@ -38,6 +38,11 @@ set(SOURCES
     src/bowstring_material.cpp
     src/sight_optics.cpp
     src/formation_simulator.cpp
+    src/modules/dynamics_solver.cpp
+    src/modules/formation_simulator_module.cpp
+    src/modules/sight_optimizer.cpp
+    src/modules/string_comparator.cpp
+    src/modules/virtual_shooting.cpp
 )
 
 set(HEADERS
@@ -58,6 +63,11 @@ set(HEADERS
     include/bowstring_material.h
     include/sight_optics.h
     include/formation_simulator.h
+    include/modules/dynamics_solver.h
+    include/modules/string_comparator.h
+    include/modules/formation_simulator_module.h
+    include/modules/sight_optimizer.h
+    include/modules/virtual_shooting.h
 )
 
 add_executable(crossbow_backend ${SOURCES} ${HEADERS})
@@ -182,12 +192,18 @@ if(BUILD_TESTS)
         tests/test_sight_optics.cpp
         tests/test_formation.cpp
         tests/test_shooting.cpp
+        tests/test_modules.cpp
         src/bowstring_material.cpp
         src/sight_optics.cpp
         src/formation_simulator.cpp
         src/dynamics_model.cpp
         src/logger.cpp
         src/metrics.cpp
+        src/modules/dynamics_solver.cpp
+        src/modules/sight_optimizer.cpp
+        src/modules/string_comparator.cpp
+        src/modules/virtual_shooting.cpp
+        src/modules/formation_simulator_module.cpp
     )
 
     set(TEST_HEADERS
@@ -199,6 +215,11 @@ if(BUILD_TESTS)
         include/formation_simulator.h
         include/logger.h
         include/metrics.h
+        include/modules/dynamics_solver.h
+        include/modules/sight_optimizer.h
+        include/modules/string_comparator.h
+        include/modules/virtual_shooting.h
+        include/modules/formation_simulator_module.h
     )
 
     add_executable(crossbow_backend_tests ${TEST_SOURCES} ${TEST_HEADERS})

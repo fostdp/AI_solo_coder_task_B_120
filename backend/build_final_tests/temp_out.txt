@@ -1,0 +1,1727 @@
+============================================================
+  弩机动力学仿真系统 - 单元测试
+============================================================
+
+
+[测试套件] Module_StringComparator
+------------------------------------------------------------
+  测试: evaluate_material_returns_valid_scores             ... [INFO] BowstringMaterialDatabase: initialized 4 default materials
+[32mPASS[0m  (1.97ms)
+  测试: compare_all_materials_ranking_order                ... [32mPASS[0m  (0.03ms)
+  测试: find_optimal_material_returns_best                 ... [32mPASS[0m  (0.04ms)
+
+[测试套件] Module_SightOptimizer
+------------------------------------------------------------
+  测试: evaluate_returns_positive_cep                      ... [INFO] SightDesignDatabase: initialized 6 default sight designs
+[32mPASS[0m  (35.04ms)
+  测试: compare_all_contains_all_types                     ... [32mPASS[0m  (187.57ms)
+  测试: optimize_picks_lowest_cep                          ... [32mPASS[0m  (96.56ms)
+
+[测试套件] Module_Formation
+------------------------------------------------------------
+  测试: evaluate_coverage_returns_valid                    ... [INFO] FormationDatabase: initialized 10 default formations
+[INFO] Generated formation: type=0, crossbows=24
+[INFO] Engagement simulated: crossbows=24, shots=72, hits=106, P(hit)={:.2f}%, coverage={:.1f}%
+[32mPASS[0m  (7.05ms)
+  测试: compare_formations_returns_sorted                  ... [INFO] Generated formation: type=0, crossbows=24
+[INFO] Engagement simulated: crossbows=24, shots=72, hits=72, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=24
+[INFO] Engagement simulated: crossbows=24, shots=72, hits=72, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=2, crossbows=24
+[INFO] Engagement simulated: crossbows=24, shots=72, hits=73, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=3, crossbows=24
+[INFO] Engagement simulated: crossbows=24, shots=72, hits=72, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=24
+[INFO] Engagement simulated: crossbows=24, shots=72, hits=72, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=24
+[INFO] Engagement simulated: crossbows=24, shots=72, hits=72, P(hit)={:.2f}%, coverage={:.1f}%
+[32mPASS[0m  (42.05ms)
+  测试: validate_placement_detects_overlap                 ... [32mPASS[0m  (0.02ms)
+
+[测试套件] Module_VirtualShooting
+------------------------------------------------------------
+  测试: validate_parameters_rejects_bad_input              ... [32mPASS[0m  (0.01ms)
+  测试: add_target_and_fire_hit_detection                  ... [32mPASS[0m  (0.01ms)
+  测试: get_stats_aggregates_correctly                     ... [32mPASS[0m  (0.01ms)
+
+[测试套件] Module_DynamicsSolver
+------------------------------------------------------------
+  测试: submit_sync_returns_trajectory                     ... [32mPASS[0m  (0.87ms)
+  测试: multiple_tasks_complete_all                        ... [32mPASS[0m  (504.53ms)
+  测试: start_stop_cycle_no_crash                          ... [32mPASS[0m  (117.93ms)
+
+[测试套件] Shooting
+------------------------------------------------------------
+  测试: 能量法初速计算正确                        ... [32mPASS[0m  (0.02ms)
+  测试: 本地弹道欧拉积分收敛                     ... [32mPASS[0m  (1.51ms)
+  测试: 不同蓄力百分比初速通过compare验证     ... [32mPASS[0m  (0.11ms)
+  测试: 弹丸距离命中检测正确                     ... [32mPASS[0m  (0.02ms)
+  测试: 弹道重力影响正确                           ... [32mPASS[0m  (0.04ms)
+  测试: 弹道阻力影响正确_高速低速差异        ... [32mPASS[0m  (1.40ms)
+  测试: 射击统计累加正确                           ... [32mPASS[0m  (0.00ms)
+  测试: 目标破坏逻辑正确                           ... [32mPASS[0m  (0.00ms)
+
+[测试套件] Shooting_Boundary
+------------------------------------------------------------
+  测试: 零初速弹道立即落地                        ... [32mPASS[0m  (0.03ms)
+  测试: 垂直向上弹道                                 ... [32mPASS[0m  (0.91ms)
+  测试: 垂直向下弹道                                 ... [32mPASS[0m  (0.01ms)
+  测试: 极小角度平射                                 ... [32mPASS[0m  (0.04ms)
+  测试: 极高初速弹道稳定性                        ... [32mPASS[0m  (5.51ms)
+  测试: 命中距离边界值                              ... [32mPASS[0m  (0.00ms)
+  测试: 最大目标数量处理                           ... [32mPASS[0m  (0.01ms)
+
+[测试套件] Shooting_Exception
+------------------------------------------------------------
+  测试: 负初速弹道鲁棒性                           ... [32mPASS[0m  (0.04ms)
+  测试: 极端角度弹道鲁棒性                        ... [32mPASS[0m  (0.35ms)
+  测试: 负时间步长处理                              ... [32mPASS[0m  (25.45ms)
+  测试: 不同材质初速通过compare验证              ... [32mPASS[0m  (0.21ms)
+  测试: 射击统计零样本处理                        ... [32mPASS[0m  (0.00ms)
+  测试: 极高频率弹道不溢出                        ... [32mPASS[0m  (60.27ms)
+  测试: 零密度材质simulate_shot鲁棒性              ... [32mPASS[0m  (0.10ms)
+
+[测试套件] Formation
+------------------------------------------------------------
+  测试: 内置阵型数据库完整                        ... [32mPASS[0m  (0.01ms)
+  测试: 阵型生成坐标不重叠                        ... [INFO] Generated formation: type=0, crossbows=36
+[32mPASS[0m  (0.25ms)
+  测试: 不同阵型生成正确坐标分布               ... [INFO] Generated formation: type=0, crossbows=36
+[INFO] Generated formation: type=1, crossbows=36
+[INFO] Generated formation: type=4, crossbows=36
+[INFO] Generated formation: type=5, crossbows=36
+[INFO] Generated formation: type=6, crossbows=36
+[INFO] Generated formation: type=7, crossbows=36
+[INFO] Generated formation: type=8, crossbows=36
+[INFO] Generated formation: type=9, crossbows=36
+[32mPASS[0m  (0.80ms)
+  测试: 交火模拟返回合理命中率                  ... [INFO] Generated formation: type=0, crossbows=36
+[INFO] Engagement simulated: crossbows=36, shots=108, hits=114, P(hit)={:.2f}%, coverage={:.1f}%
+[32mPASS[0m  (13.46ms)
+  测试: 命中概率估算有效                           ... [32mPASS[0m  (0.01ms)
+  测试: 阵型对比返回有序结果                     ... [INFO] Generated formation: type=0, crossbows=36
+[INFO] Engagement simulated: crossbows=36, shots=108, hits=81, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=36
+[INFO] Engagement simulated: crossbows=36, shots=108, hits=163, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=36
+[INFO] Engagement simulated: crossbows=36, shots=108, hits=92, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=36
+[INFO] Engagement simulated: crossbows=36, shots=108, hits=94, P(hit)={:.2f}%, coverage={:.1f}%
+[32mPASS[0m  (25.81ms)
+  测试: 齐射计划合理分配火力                     ... [INFO] Generated formation: type=0, crossbows=36
+[32mPASS[0m  (0.39ms)
+  测试: 强化学习训练收敛                           ... [INFO] Generated formation: type=0, crossbows=45
+[INFO] Engagement simulated: crossbows=45, shots=90, hits=214, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=3, crossbows=45
+[INFO] Engagement simulated: crossbows=45, shots=90, hits=215, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=45
+[INFO] Engagement simulated: crossbows=45, shots=90, hits=217, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=45
+[INFO] Engagement simulated: crossbows=45, shots=90, hits=218, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=45
+[INFO] Engagement simulated: crossbows=45, shots=90, hits=136, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=45
+[INFO] Engagement simulated: crossbows=45, shots=90, hits=135, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=45
+[INFO] Engagement simulated: crossbows=45, shots=90, hits=136, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=45
+[INFO] Engagement simulated: crossbows=45, shots=90, hits=135, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=45
+[INFO] Engagement simulated: crossbows=45, shots=90, hits=135, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=45
+[INFO] Engagement simulated: crossbows=45, shots=90, hits=135, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=45
+[INFO] Engagement simulated: crossbows=45, shots=90, hits=135, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=45
+[INFO] Engagement simulated: crossbows=45, shots=90, hits=135, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=45
+[INFO] Engagement simulated: crossbows=45, shots=90, hits=136, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=45
+[INFO] Engagement simulated: crossbows=45, shots=90, hits=136, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=45
+[INFO] Engagement simulated: crossbows=45, shots=90, hits=137, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=45
+[INFO] Engagement simulated: crossbows=45, shots=90, hits=135, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=75, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=79, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=79, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=74, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=73, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=3, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=7, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=49, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=2, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=2, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=2, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=79, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=7, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=79, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=74, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=80, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=74, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=7, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=49, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=6, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=52, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=6, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=53, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=6, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=55, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=2, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=73, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=3, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=6, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=52, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=6, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=51, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=6, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=50, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=6, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=54, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=45
+[INFO] Engagement simulated: crossbows=45, shots=90, hits=215, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=45
+[INFO] Engagement simulated: crossbows=45, shots=90, hits=217, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=45
+[INFO] Engagement simulated: crossbows=45, shots=90, hits=219, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=45
+[INFO] Engagement simulated: crossbows=45, shots=90, hits=219, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=45
+[INFO] Engagement simulated: crossbows=45, shots=90, hits=218, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=45
+[INFO] Engagement simulated: crossbows=45, shots=90, hits=218, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=45
+[INFO] Engagement simulated: crossbows=45, shots=90, hits=218, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=45
+[INFO] Engagement simulated: crossbows=45, shots=90, hits=217, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=6, crossbows=45
+[INFO] Engagement simulated: crossbows=45, shots=90, hits=159, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=6, crossbows=45
+[INFO] Engagement simulated: crossbows=45, shots=90, hits=159, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=6, crossbows=45
+[INFO] Engagement simulated: crossbows=45, shots=90, hits=160, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=2, crossbows=45
+[INFO] Engagement simulated: crossbows=45, shots=90, hits=222, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=45
+[INFO] Engagement simulated: crossbows=45, shots=90, hits=215, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=45
+[INFO] Engagement simulated: crossbows=45, shots=90, hits=135, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=3, crossbows=45
+[INFO] Engagement simulated: crossbows=45, shots=90, hits=135, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=45
+[INFO] Engagement simulated: crossbows=45, shots=90, hits=136, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=74, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=79, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=49, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=49, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=50, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=49, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=3, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=49, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=3, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=51, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=3, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=79, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=74, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=75, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=75, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=73, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=79, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=74, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=6, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=65, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=80, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=80, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=7, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=7, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=2, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=75, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=2, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=75, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=7, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=75, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=75, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=7, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=7, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=50, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=49, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=49, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=2, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=2, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=49, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=6, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=53, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=6, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=51, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=79, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=75, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=75, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=75, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=7, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=6, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=53, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=50, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=7, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=7, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=7, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=12
+[INFO] Engagement simulated: crossbows=12, shots=24, hits=57, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=12
+[INFO] Engagement simulated: crossbows=12, shots=24, hits=58, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=12
+[INFO] Engagement simulated: crossbows=12, shots=24, hits=36, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=12
+[INFO] Engagement simulated: crossbows=12, shots=24, hits=36, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=12
+[INFO] Engagement simulated: crossbows=12, shots=24, hits=36, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=2, crossbows=12
+[INFO] Engagement simulated: crossbows=12, shots=24, hits=38, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=12
+[INFO] Engagement simulated: crossbows=12, shots=24, hits=36, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=12
+[INFO] Engagement simulated: crossbows=12, shots=24, hits=36, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=12
+[INFO] Engagement simulated: crossbows=12, shots=24, hits=36, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=12
+[INFO] Engagement simulated: crossbows=12, shots=24, hits=36, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=12
+[INFO] Engagement simulated: crossbows=12, shots=24, hits=36, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=6, crossbows=12
+[INFO] Engagement simulated: crossbows=12, shots=24, hits=41, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=12
+[INFO] Engagement simulated: crossbows=12, shots=24, hits=36, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=12
+[INFO] Engagement simulated: crossbows=12, shots=24, hits=36, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=6, crossbows=12
+[INFO] Engagement simulated: crossbows=12, shots=24, hits=41, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=2, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=2, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=2, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=49, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=2, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=2, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=3, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=3, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=3, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=3, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=3, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=3, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=3, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=75, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=3, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=79, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=75, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=79, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=74, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=3, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=74, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=7, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=73, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=2, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=7, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=80, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=74, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=73, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=80, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=79, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=49, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=49, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=3, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=50, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=49, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=49, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=3, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=49, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=2, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=79, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=6, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=54, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=2, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=7, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=7, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=25
+[INFO] Engagement simulated: crossbows=25, shots=50, hits=122, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=25
+[INFO] Engagement simulated: crossbows=25, shots=50, hits=123, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=25
+[INFO] Engagement simulated: crossbows=25, shots=50, hits=120, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=25
+[INFO] Engagement simulated: crossbows=25, shots=50, hits=118, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=25
+[INFO] Engagement simulated: crossbows=25, shots=50, hits=121, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=25
+[INFO] Engagement simulated: crossbows=25, shots=50, hits=120, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=25
+[INFO] Engagement simulated: crossbows=25, shots=50, hits=118, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=25
+[INFO] Engagement simulated: crossbows=25, shots=50, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=25
+[INFO] Engagement simulated: crossbows=25, shots=50, hits=75, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=25
+[INFO] Engagement simulated: crossbows=25, shots=50, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=25
+[INFO] Engagement simulated: crossbows=25, shots=50, hits=75, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=25
+[INFO] Engagement simulated: crossbows=25, shots=50, hits=75, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=25
+[INFO] Engagement simulated: crossbows=25, shots=50, hits=75, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=25
+[INFO] Engagement simulated: crossbows=25, shots=50, hits=75, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=25
+[INFO] Engagement simulated: crossbows=25, shots=50, hits=75, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=75, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=75, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=79, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=49, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=2, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=2, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=75, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=7, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=49, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=49, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=50, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=49, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=49, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=75, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=75, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=74, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=3, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=2, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=74, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=2, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=7, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=7, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=3, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=3, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=6, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=64, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=80, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=49, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=6, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=63, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=75, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=7, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=74, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=2, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=2, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=75, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=7, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=7, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=6, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=52, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=6, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=54, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=49, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=75, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=79, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=79, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=79, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=7, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=49, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=74, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=7, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=7, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=80, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=6, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=52, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=6, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=53, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=6, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=51, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=7, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=75, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=75, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=74, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=7, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=7, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=49, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=3, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=6, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=52, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=7, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=39
+[INFO] Engagement simulated: crossbows=39, shots=78, hits=187, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=3, crossbows=39
+[INFO] Engagement simulated: crossbows=39, shots=78, hits=187, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=39
+[INFO] Engagement simulated: crossbows=39, shots=78, hits=180, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=39
+[INFO] Engagement simulated: crossbows=39, shots=78, hits=190, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=2, crossbows=39
+[INFO] Engagement simulated: crossbows=39, shots=78, hits=186, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=2, crossbows=39
+[INFO] Engagement simulated: crossbows=39, shots=78, hits=185, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=2, crossbows=39
+[INFO] Engagement simulated: crossbows=39, shots=78, hits=183, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=2, crossbows=39
+[INFO] Engagement simulated: crossbows=39, shots=78, hits=186, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=2, crossbows=39
+[INFO] Engagement simulated: crossbows=39, shots=78, hits=185, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=2, crossbows=39
+[INFO] Engagement simulated: crossbows=39, shots=78, hits=184, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=2, crossbows=39
+[INFO] Engagement simulated: crossbows=39, shots=78, hits=180, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=2, crossbows=39
+[INFO] Engagement simulated: crossbows=39, shots=78, hits=181, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=3, crossbows=39
+[INFO] Engagement simulated: crossbows=39, shots=78, hits=190, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=39
+[INFO] Engagement simulated: crossbows=39, shots=78, hits=182, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=75, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=6, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=64, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=79, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=74, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=75, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=75, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=6, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=64, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=80, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=75, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=73, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=74, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=6, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=62, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=6, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=61, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=2, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=2, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=3, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=79, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=74, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=74, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=75, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=74, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=3, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=75, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=3, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=3, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=2, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=3, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=2, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=2, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=7
+[INFO] Engagement simulated: crossbows=7, shots=14, hits=35, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=7
+[INFO] Engagement simulated: crossbows=7, shots=14, hits=21, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=7
+[INFO] Engagement simulated: crossbows=7, shots=14, hits=21, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=7
+[INFO] Engagement simulated: crossbows=7, shots=14, hits=21, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=7
+[INFO] Engagement simulated: crossbows=7, shots=14, hits=21, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=7
+[INFO] Engagement simulated: crossbows=7, shots=14, hits=21, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=3, crossbows=7
+[INFO] Engagement simulated: crossbows=7, shots=14, hits=21, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=7
+[INFO] Engagement simulated: crossbows=7, shots=14, hits=21, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=6, crossbows=12
+[INFO] Engagement simulated: crossbows=12, shots=24, hits=40, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=7
+[INFO] Engagement simulated: crossbows=7, shots=14, hits=21, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=7
+[INFO] Engagement simulated: crossbows=7, shots=14, hits=21, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=7
+[INFO] Engagement simulated: crossbows=7, shots=14, hits=21, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=7, crossbows=11
+[INFO] Engagement simulated: crossbows=11, shots=22, hits=33, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=2, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=74, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=7, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=75, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=2, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=2, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=79, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=2, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=75, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=2, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=2, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=74, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=79, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=49, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=49, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=3, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=3, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=49, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=49, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=50, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=1, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=74, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=79, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=51, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=49, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=79, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=3, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=74, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=80, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=7, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=79, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=7, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=73, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=49, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=79, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=3, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=27
+[INFO] Engagement simulated: crossbows=27, shots=54, hits=128, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=27
+[INFO] Engagement simulated: crossbows=27, shots=54, hits=82, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=27
+[INFO] Engagement simulated: crossbows=27, shots=54, hits=81, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=27
+[INFO] Engagement simulated: crossbows=27, shots=54, hits=81, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=27
+[INFO] Engagement simulated: crossbows=27, shots=54, hits=81, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=27
+[INFO] Engagement simulated: crossbows=27, shots=54, hits=81, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=3, crossbows=27
+[INFO] Engagement simulated: crossbows=27, shots=54, hits=81, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=3, crossbows=27
+[INFO] Engagement simulated: crossbows=27, shots=54, hits=81, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=3, crossbows=27
+[INFO] Engagement simulated: crossbows=27, shots=54, hits=81, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=3, crossbows=27
+[INFO] Engagement simulated: crossbows=27, shots=54, hits=81, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=3, crossbows=27
+[INFO] Engagement simulated: crossbows=27, shots=54, hits=81, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=3, crossbows=27
+[INFO] Engagement simulated: crossbows=27, shots=54, hits=81, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=3, crossbows=27
+[INFO] Engagement simulated: crossbows=27, shots=54, hits=81, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=2, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=75, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=49, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=49, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=49, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=73, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=3, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=79, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=75, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=75, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=75, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=74, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=74, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=75, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=75, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=79, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=79, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=7, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=7, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=79, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=5, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=48, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=73, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=75, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=75, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=9, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=80, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=74, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=72, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=4, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=77, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=80, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=79, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=78, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=8, crossbows=16
+[INFO] Engagement simulated: crossbows=16, shots=32, hits=76, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=13
+[INFO] Engagement simulated: crossbows=13, shots=26, hits=63, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=13
+[INFO] Engagement simulated: crossbows=13, shots=26, hits=64, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=13
+[INFO] Engagement simulated: crossbows=13, shots=26, hits=62, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=13
+[INFO] Engagement simulated: crossbows=13, shots=26, hits=62, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=13
+[INFO] Engagement simulated: crossbows=13, shots=26, hits=62, P(hit)={:.2f}%, coverage={:.1f}%
+[INFO] Generated formation: type=0, crossbows=13

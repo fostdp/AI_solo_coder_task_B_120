@@ -1,0 +1,9 @@
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_final_tests/CMakeFiles/crossbow_backend.dir
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_final_tests/CMakeFiles/crossbow_backend_tests.dir
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_final_tests/CMakeFiles/test.dir
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_final_tests/CMakeFiles/edit_cache.dir
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_final_tests/CMakeFiles/rebuild_cache.dir
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_final_tests/CMakeFiles/list_install_components.dir
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_final_tests/CMakeFiles/install.dir
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_final_tests/CMakeFiles/install/local.dir
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_final_tests/CMakeFiles/install/strip.dir

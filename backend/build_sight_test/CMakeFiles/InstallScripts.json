@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_sight_test/cmake_install.cmake",
+		"D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_sight_test/_deps/spdlog-build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
