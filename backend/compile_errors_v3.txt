@@ -1,0 +1,150 @@
+﻿[  8%] Building CXX object CMakeFiles/crossbow_backend_tests.dir/tests/test_main.cpp.obj
+[ 16%] Building CXX object CMakeFiles/crossbow_backend_tests.dir/tests/test_bowstring.cpp.obj
+mingw32-make : D:\SOLO-2\AI_solo_coder_task_B_120\backend\tests\test_bowstring.
+cpp: In function 'void Bowstring_鍌ㄨ兘鏁堢巼鎺掑簭绗﹀悎鐗╃悊瑙勫緥()':
+所在位置 行:1 字符: 100
++ ... backend\build_tests; mingw32-make crossbow_backend_tests 2>&1 | Out-F ...
++                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (D:\SOLO-2\AI_so...掑簭绗﹀悎鐗╃悊瑙勫緥()': 
+   :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+D:\SOLO-2\AI_solo_coder_task_B_120\backend\tests\test_bowstring.cpp:96:11: warn
+ing: unused variable 'db' [-Wunused-variable]
+   96 |     auto& db = BowstringMaterialDatabase::instance();
+      |           ^~
+In file included from D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/bowstr
+ing_material.h:3,
+                 from D:\SOLO-2\AI_solo_coder_task_B_120\backend\tests\test_bow
+string.cpp:5:
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h: At global scope:
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h:130:15: warning: 'd
+ouble to_degrees(double)' defined but not used [-Wunused-function]
+  130 | static double to_degrees(double radians) {
+      |               ^~~~~~~~~~
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h:126:15: warning: 'd
+ouble to_radians(double)' defined but not used [-Wunused-function]
+  126 | static double to_radians(double degrees) {
+      |               ^~~~~~~~~~
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h:115:20: warning: 's
+td::string format_timestamp(const std::chrono::_V2::system_clock::time_point&)'
+ defined but not used [-Wunused-function]
+  115 | static std::string format_timestamp(const std::chrono::system_clock::ti
+me_point& tp) {
+      |                    ^~~~~~~~~~~~~~~~
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h:100:20: warning: 's
+td::string generate_uuid()' defined but not used [-Wunused-function]
+  100 | static std::string generate_uuid() {
+      |                    ^~~~~~~~~~~~~
+[ 25%] Building CXX object CMakeFiles/crossbow_backend_tests.dir/tests/test_sight_optics.cpp.obj
+In file included from D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/sight_
+optics.h:3,
+                 from D:\SOLO-2\AI_solo_coder_task_B_120\backend\tests\test_sig
+ht_optics.cpp:5:
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h:130:15: warning: 'd
+ouble to_degrees(double)' defined but not used [-Wunused-function]
+  130 | static double to_degrees(double radians) {
+      |               ^~~~~~~~~~
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h:126:15: warning: 'd
+ouble to_radians(double)' defined but not used [-Wunused-function]
+  126 | static double to_radians(double degrees) {
+      |               ^~~~~~~~~~
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h:115:20: warning: 's
+td::string format_timestamp(const std::chrono::_V2::system_clock::time_point&)'
+ defined but not used [-Wunused-function]
+  115 | static std::string format_timestamp(const std::chrono::system_clock::ti
+me_point& tp) {
+      |                    ^~~~~~~~~~~~~~~~
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h:100:20: warning: 's
+td::string generate_uuid()' defined but not used [-Wunused-function]
+  100 | static std::string generate_uuid() {
+      |                    ^~~~~~~~~~~~~
+[ 33%] Building CXX object CMakeFiles/crossbow_backend_tests.dir/tests/test_formation.cpp.obj
+In file included from D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/format
+ion_simulator.h:3,
+                 from D:\SOLO-2\AI_solo_coder_task_B_120\backend\tests\test_for
+mation.cpp:5:
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h:130:15: warning: 'd
+ouble to_degrees(double)' defined but not used [-Wunused-function]
+  130 | static double to_degrees(double radians) {
+      |               ^~~~~~~~~~
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h:126:15: warning: 'd
+ouble to_radians(double)' defined but not used [-Wunused-function]
+  126 | static double to_radians(double degrees) {
+      |               ^~~~~~~~~~
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h:115:20: warning: 's
+td::string format_timestamp(const std::chrono::_V2::system_clock::time_point&)'
+ defined but not used [-Wunused-function]
+  115 | static std::string format_timestamp(const std::chrono::system_clock::ti
+me_point& tp) {
+      |                    ^~~~~~~~~~~~~~~~
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h:100:20: warning: 's
+td::string generate_uuid()' defined but not used [-Wunused-function]
+  100 | static std::string generate_uuid() {
+      |                    ^~~~~~~~~~~~~
+[ 41%] Building CXX object CMakeFiles/crossbow_backend_tests.dir/tests/test_shooting.cpp.obj
+D:\SOLO-2\AI_solo_coder_task_B_120\backend\tests\test_shooting.cpp: In function
+ 'void Shooting_寮归亾閲嶅姏褰卞搷姝ｇ‘()':
+D:\SOLO-2\AI_solo_coder_task_B_120\backend\tests\test_shooting.cpp:151:38: erro
+r: '__gnu_cxx::__alloc_traits<std::allocator<TrajectoryPoint>, TrajectoryPoint>
+::value_type' {aka 'struct TrajectoryPoint'} has no member named 'time_s'; did 
+you mean 'time_step'?
+  151 |     double flight_time = traj.back().time_s;
+      |                                      ^~~~~~
+      |                                      time_step
+In file included from D:\SOLO-2\AI_solo_coder_task_B_120\backend\tests\test_sho
+oting.cpp:4:
+D:\SOLO-2\AI_solo_coder_task_B_120\backend\tests\test_shooting.cpp: In function
+ 'void Shooting_Boundary_鍨傜洿鍚戜笅寮归亾()':
+D:\SOLO-2\AI_solo_coder_task_B_120\backend\tests\test_shooting.cpp:306:28: erro
+r: '__gnu_cxx::__alloc_traits<std::allocator<TrajectoryPoint>, TrajectoryPoint>
+::value_type' {aka 'struct TrajectoryPoint'} has no member named 'time_s'; did 
+you mean 'time_step'?
+  306 |     REQUIRE_LT(traj.back().time_s, 1.0);
+      |                            ^~~~~~
+D:\SOLO-2\AI_solo_coder_task_B_120\backend\tests\test_harness.h:169:17: note: i
+n definition of macro 'REQUIRE_LT'
+  169 |     do { if (!((a) < (b))) { \
+      |                 ^
+D:\SOLO-2\AI_solo_coder_task_B_120\backend\tests\test_shooting.cpp:306:28: erro
+r: '__gnu_cxx::__alloc_traits<std::allocator<TrajectoryPoint>, TrajectoryPoint>
+::value_type' {aka 'struct TrajectoryPoint'} has no member named 'time_s'; did 
+you mean 'time_step'?
+  306 |     REQUIRE_LT(traj.back().time_s, 1.0);
+      |                            ^~~~~~
+D:\SOLO-2\AI_solo_coder_task_B_120\backend\tests\test_harness.h:171:89: note: i
+n definition of macro 'REQUIRE_LT'
+  171 |         oss << "REQUIRE_LT(" #a ", " #b ") 澶辫触: " << crossbow::test::de
+tail::printable(a) << " >= " << crossbow::test::detail::printable(b); \
+      |                                                                        
+                 ^
+In file included from D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/bowstr
+ing_material.h:3,
+                 from D:\SOLO-2\AI_solo_coder_task_B_120\backend\tests\test_sho
+oting.cpp:5:
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h: At global scope:
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h:130:15: warning: 'd
+ouble to_degrees(double)' defined but not used [-Wunused-function]
+  130 | static double to_degrees(double radians) {
+      |               ^~~~~~~~~~
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h:126:15: warning: 'd
+ouble to_radians(double)' defined but not used [-Wunused-function]
+  126 | static double to_radians(double degrees) {
+      |               ^~~~~~~~~~
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h:115:20: warning: 's
+td::string format_timestamp(const std::chrono::_V2::system_clock::time_point&)'
+ defined but not used [-Wunused-function]
+  115 | static std::string format_timestamp(const std::chrono::system_clock::ti
+me_point& tp) {
+      |                    ^~~~~~~~~~~~~~~~
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h:100:20: warning: 's
+td::string generate_uuid()' defined but not used [-Wunused-function]
+  100 | static std::string generate_uuid() {
+      |                    ^~~~~~~~~~~~~
+mingw32-make[3]: *** [CMakeFiles\crossbow_backend_tests.dir\build.make:139: CMa
+keFiles/crossbow_backend_tests.dir/tests/test_shooting.cpp.obj] Error 1
+mingw32-make[2]: *** [CMakeFiles\Makefile2:121: CMakeFiles/crossbow_backend_tes
+ts.dir/all] Error 2
+mingw32-make[1]: *** [CMakeFiles\Makefile2:128: CMakeFiles/crossbow_backend_tes
+ts.dir/rule] Error 2
+mingw32-make: *** [makefile:191: crossbow_backend_tests] Error 2
