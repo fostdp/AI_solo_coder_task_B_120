@@ -1,0 +1,1 @@
+ "_deps/spdlog-build/libspdlog.a" "_deps/prometheus-cpp-build/lib/libprometheus-cpp-core.a" "_deps/prometheus-cpp-build/lib/libprometheus-cpp-pull.a" -lWs2_32 "_deps/prometheus-cpp-build/lib/libprometheus-cpp-core.a" -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
