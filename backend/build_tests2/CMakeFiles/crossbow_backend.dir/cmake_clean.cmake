@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/crossbow_backend.dir/src/accuracy_analyzer.cpp.obj"
+  "CMakeFiles/crossbow_backend.dir/src/accuracy_analyzer.cpp.obj.d"
+  "CMakeFiles/crossbow_backend.dir/src/accuracy_analyzer_service.cpp.obj"
+  "CMakeFiles/crossbow_backend.dir/src/accuracy_analyzer_service.cpp.obj.d"
+  "CMakeFiles/crossbow_backend.dir/src/alarm_mqtt_service.cpp.obj"
+  "CMakeFiles/crossbow_backend.dir/src/alarm_mqtt_service.cpp.obj.d"
+  "CMakeFiles/crossbow_backend.dir/src/ballistic_simulator.cpp.obj"
+  "CMakeFiles/crossbow_backend.dir/src/ballistic_simulator.cpp.obj.d"
+  "CMakeFiles/crossbow_backend.dir/src/bowstring_material.cpp.obj"
+  "CMakeFiles/crossbow_backend.dir/src/bowstring_material.cpp.obj.d"
+  "CMakeFiles/crossbow_backend.dir/src/clickhouse_storage.cpp.obj"
+  "CMakeFiles/crossbow_backend.dir/src/clickhouse_storage.cpp.obj.d"
+  "CMakeFiles/crossbow_backend.dir/src/dynamics_model.cpp.obj"
+  "CMakeFiles/crossbow_backend.dir/src/dynamics_model.cpp.obj.d"
+  "CMakeFiles/crossbow_backend.dir/src/formation_simulator.cpp.obj"
+  "CMakeFiles/crossbow_backend.dir/src/formation_simulator.cpp.obj.d"
+  "CMakeFiles/crossbow_backend.dir/src/http_server.cpp.obj"
+  "CMakeFiles/crossbow_backend.dir/src/http_server.cpp.obj.d"
+  "CMakeFiles/crossbow_backend.dir/src/logger.cpp.obj"
+  "CMakeFiles/crossbow_backend.dir/src/logger.cpp.obj.d"
+  "CMakeFiles/crossbow_backend.dir/src/main.cpp.obj"
+  "CMakeFiles/crossbow_backend.dir/src/main.cpp.obj.d"
+  "CMakeFiles/crossbow_backend.dir/src/metrics.cpp.obj"
+  "CMakeFiles/crossbow_backend.dir/src/metrics.cpp.obj.d"
+  "CMakeFiles/crossbow_backend.dir/src/mqtt_alert_manager.cpp.obj"
+  "CMakeFiles/crossbow_backend.dir/src/mqtt_alert_manager.cpp.obj.d"
+  "CMakeFiles/crossbow_backend.dir/src/sight_optics.cpp.obj"
+  "CMakeFiles/crossbow_backend.dir/src/sight_optics.cpp.obj.d"
+  "CMakeFiles/crossbow_backend.dir/src/udp_receiver.cpp.obj"
+  "CMakeFiles/crossbow_backend.dir/src/udp_receiver.cpp.obj.d"
+  "crossbow_backend.exe"
+  "crossbow_backend.exe.manifest"
+  "crossbow_backend.pdb"
+  "libcrossbow_backend.dll.a"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/crossbow_backend.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
