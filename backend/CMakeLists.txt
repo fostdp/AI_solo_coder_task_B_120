@@ -171,3 +171,64 @@ target_link_libraries(crossbow_backend PRIVATE Threads::Threads)
 
 install(TARGETS crossbow_backend RUNTIME DESTINATION bin)
 install(FILES config.json DESTINATION etc/crossbow)
+
+# ================ 单元测试 ================
+option(BUILD_TESTS "Build unit tests" ON)
+
+if(BUILD_TESTS)
+    set(TEST_SOURCES
+        tests/test_main.cpp
+        tests/test_bowstring.cpp
+        tests/test_sight_optics.cpp
+        tests/test_formation.cpp
+        tests/test_shooting.cpp
+        src/bowstring_material.cpp
+        src/sight_optics.cpp
+        src/formation_simulator.cpp
+        src/dynamics_model.cpp
+        src/logger.cpp
+        src/metrics.cpp
+    )
+
+    set(TEST_HEADERS
+        tests/test_harness.h
+        include/common.h
+        include/dynamics_model.h
+        include/bowstring_material.h
+        include/sight_optics.h
+        include/formation_simulator.h
+        include/logger.h
+        include/metrics.h
+    )
+
+    add_executable(crossbow_backend_tests ${TEST_SOURCES} ${TEST_HEADERS})
+
+    target_include_directories(crossbow_backend_tests PRIVATE
+        ${CMAKE_CURRENT_SOURCE_DIR}/include
+        ${CMAKE_CURRENT_SOURCE_DIR}/tests
+    )
+
+    if(nlohmann_json_FOUND)
+        target_link_libraries(crossbow_backend_tests PRIVATE nlohmann_json::nlohmann_json)
+    else()
+        target_include_directories(crossbow_backend_tests PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/../third_party/json/include)
+    endif()
+
+    target_compile_definitions(crossbow_backend_tests PRIVATE
+        CLICKHOUSE_MOCK=1
+        MQTT_MOCK=1
+    )
+
+    target_link_libraries(crossbow_backend_tests PRIVATE Threads::Threads)
+
+    if(WIN32)
+        target_link_libraries(crossbow_backend_tests PRIVATE Ws2_32)
+    else()
+        target_link_libraries(crossbow_backend_tests PRIVATE dl)
+    endif()
+
+    enable_testing()
+    add_test(NAME crossbow_backend_tests COMMAND crossbow_backend_tests)
+
+    message(STATUS "Unit tests enabled - build target: crossbow_backend_tests")
+endif()
