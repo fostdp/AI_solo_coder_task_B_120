@@ -1,0 +1,3 @@
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_new/_deps/spdlog-subbuild/CMakeFiles/spdlog-populate.dir
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_new/_deps/spdlog-subbuild/CMakeFiles/edit_cache.dir
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/build_new/_deps/spdlog-subbuild/CMakeFiles/rebuild_cache.dir
