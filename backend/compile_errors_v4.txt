@@ -1,0 +1,45 @@
+﻿[  8%] Building CXX object CMakeFiles/crossbow_backend_tests.dir/tests/test_shooting.cpp.obj
+mingw32-make : In file included from D:/SOLO-2/AI_solo_coder_task_B_120/backend
+/include/bowstring_material.h:3,
+所在位置 行:1 字符: 100
++ ... backend\build_tests; mingw32-make crossbow_backend_tests 2>&1 | Out-F ...
++                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (In file include...g_material.h:3, 
+   :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+                 from D:\SOLO-2\AI_solo_coder_task_B_120\backend\tests\test_sho
+oting.cpp:5:
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h:130:15: warning: 'd
+ouble to_degrees(double)' defined but not used [-Wunused-function]
+  130 | static double to_degrees(double radians) {
+      |               ^~~~~~~~~~
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h:126:15: warning: 'd
+ouble to_radians(double)' defined but not used [-Wunused-function]
+  126 | static double to_radians(double degrees) {
+      |               ^~~~~~~~~~
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h:115:20: warning: 's
+td::string format_timestamp(const std::chrono::_V2::system_clock::time_point&)'
+ defined but not used [-Wunused-function]
+  115 | static std::string format_timestamp(const std::chrono::system_clock::ti
+me_point& tp) {
+      |                    ^~~~~~~~~~~~~~~~
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h:100:20: warning: 's
+td::string generate_uuid()' defined but not used [-Wunused-function]
+  100 | static std::string generate_uuid() {
+      |                    ^~~~~~~~~~~~~
+[ 16%] Building CXX object CMakeFiles/crossbow_backend_tests.dir/src/bowstring_material.cpp.obj
+In file included from D:\SOLO-2\AI_solo_coder_task_B_120\backend\src\bowstring_
+material.cpp:3:
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/logger.h:11:10: fatal error:
+ spdlog/spdlog.h: No such file or directory
+   11 | #include "spdlog/spdlog.h"
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+mingw32-make[3]: *** [CMakeFiles\crossbow_backend_tests.dir\build.make:154: CMa
+keFiles/crossbow_backend_tests.dir/src/bowstring_material.cpp.obj] Error 1
+mingw32-make[2]: *** [CMakeFiles\Makefile2:121: CMakeFiles/crossbow_backend_tes
+ts.dir/all] Error 2
+mingw32-make[1]: *** [CMakeFiles\Makefile2:128: CMakeFiles/crossbow_backend_tes
+ts.dir/rule] Error 2
+mingw32-make: *** [makefile:191: crossbow_backend_tests] Error 2
