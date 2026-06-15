@@ -1,0 +1,250 @@
+﻿[  8%] Building CXX object CMakeFiles/crossbow_backend_tests.dir/tests/test_main.cpp.obj
+[ 16%] Building CXX object CMakeFiles/crossbow_backend_tests.dir/tests/test_bowstring.cpp.obj
+mingw32-make : D:\SOLO-2\AI_solo_coder_task_B_120\backend\tests\test_bowstring.
+cpp: In function 'void Bowstring_鍌ㄨ兘鏁堢巼鎺掑簭绗﹀悎鐗╃悊瑙勫緥()':
+所在位置 行:1 字符: 241
++ ... OCKFREE=OFF .. 2>&1; mingw32-make crossbow_backend_tests 2>&1 | Out-F ...
++                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (D:\SOLO-2\AI_so...掑簭绗﹀悎鐗╃悊瑙勫緥()': 
+   :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+D:\SOLO-2\AI_solo_coder_task_B_120\backend\tests\test_bowstring.cpp:96:11: warn
+ing: unused variable 'db' [-Wunused-variable]
+   96 |     auto& db = BowstringMaterialDatabase::instance();
+      |           ^~
+In file included from D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/bowstr
+ing_material.h:3,
+                 from D:\SOLO-2\AI_solo_coder_task_B_120\backend\tests\test_bow
+string.cpp:5:
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h: At global scope:
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h:130:15: warning: 'd
+ouble to_degrees(double)' defined but not used [-Wunused-function]
+  130 | static double to_degrees(double radians) {
+      |               ^~~~~~~~~~
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h:126:15: warning: 'd
+ouble to_radians(double)' defined but not used [-Wunused-function]
+  126 | static double to_radians(double degrees) {
+      |               ^~~~~~~~~~
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h:115:20: warning: 's
+td::string format_timestamp(const std::chrono::_V2::system_clock::time_point&)'
+ defined but not used [-Wunused-function]
+  115 | static std::string format_timestamp(const std::chrono::system_clock::ti
+me_point& tp) {
+      |                    ^~~~~~~~~~~~~~~~
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h:100:20: warning: 's
+td::string generate_uuid()' defined but not used [-Wunused-function]
+  100 | static std::string generate_uuid() {
+      |                    ^~~~~~~~~~~~~
+[ 25%] Building CXX object CMakeFiles/crossbow_backend_tests.dir/tests/test_sight_optics.cpp.obj
+In file included from D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/sight_
+optics.h:3,
+                 from D:\SOLO-2\AI_solo_coder_task_B_120\backend\tests\test_sig
+ht_optics.cpp:5:
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h:130:15: warning: 'd
+ouble to_degrees(double)' defined but not used [-Wunused-function]
+  130 | static double to_degrees(double radians) {
+      |               ^~~~~~~~~~
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h:126:15: warning: 'd
+ouble to_radians(double)' defined but not used [-Wunused-function]
+  126 | static double to_radians(double degrees) {
+      |               ^~~~~~~~~~
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h:115:20: warning: 's
+td::string format_timestamp(const std::chrono::_V2::system_clock::time_point&)'
+ defined but not used [-Wunused-function]
+  115 | static std::string format_timestamp(const std::chrono::system_clock::ti
+me_point& tp) {
+      |                    ^~~~~~~~~~~~~~~~
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h:100:20: warning: 's
+td::string generate_uuid()' defined but not used [-Wunused-function]
+  100 | static std::string generate_uuid() {
+      |                    ^~~~~~~~~~~~~
+[ 33%] Building CXX object CMakeFiles/crossbow_backend_tests.dir/tests/test_formation.cpp.obj
+In file included from D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/format
+ion_simulator.h:3,
+                 from D:\SOLO-2\AI_solo_coder_task_B_120\backend\tests\test_for
+mation.cpp:5:
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h:130:15: warning: 'd
+ouble to_degrees(double)' defined but not used [-Wunused-function]
+  130 | static double to_degrees(double radians) {
+      |               ^~~~~~~~~~
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h:126:15: warning: 'd
+ouble to_radians(double)' defined but not used [-Wunused-function]
+  126 | static double to_radians(double degrees) {
+      |               ^~~~~~~~~~
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h:115:20: warning: 's
+td::string format_timestamp(const std::chrono::_V2::system_clock::time_point&)'
+ defined but not used [-Wunused-function]
+  115 | static std::string format_timestamp(const std::chrono::system_clock::ti
+me_point& tp) {
+      |                    ^~~~~~~~~~~~~~~~
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h:100:20: warning: 's
+td::string generate_uuid()' defined but not used [-Wunused-function]
+  100 | static std::string generate_uuid() {
+      |                    ^~~~~~~~~~~~~
+[ 41%] Building CXX object CMakeFiles/crossbow_backend_tests.dir/tests/test_shooting.cpp.obj
+In file included from D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/bowstr
+ing_material.h:3,
+                 from D:\SOLO-2\AI_solo_coder_task_B_120\backend\tests\test_sho
+oting.cpp:5:
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h:130:15: warning: 'd
+ouble to_degrees(double)' defined but not used [-Wunused-function]
+  130 | static double to_degrees(double radians) {
+      |               ^~~~~~~~~~
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h:126:15: warning: 'd
+ouble to_radians(double)' defined but not used [-Wunused-function]
+  126 | static double to_radians(double degrees) {
+      |               ^~~~~~~~~~
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h:115:20: warning: 's
+td::string format_timestamp(const std::chrono::_V2::system_clock::time_point&)'
+ defined but not used [-Wunused-function]
+  115 | static std::string format_timestamp(const std::chrono::system_clock::ti
+me_point& tp) {
+      |                    ^~~~~~~~~~~~~~~~
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h:100:20: warning: 's
+td::string generate_uuid()' defined but not used [-Wunused-function]
+  100 | static std::string generate_uuid() {
+      |                    ^~~~~~~~~~~~~
+[ 50%] Building CXX object CMakeFiles/crossbow_backend_tests.dir/src/bowstring_material.cpp.obj
+In file included from D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/bowstr
+ing_material.h:3,
+                 from D:\SOLO-2\AI_solo_coder_task_B_120\backend\src\bowstring_
+material.cpp:1:
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h:130:15: warning: 'd
+ouble to_degrees(double)' defined but not used [-Wunused-function]
+  130 | static double to_degrees(double radians) {
+      |               ^~~~~~~~~~
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h:126:15: warning: 'd
+ouble to_radians(double)' defined but not used [-Wunused-function]
+  126 | static double to_radians(double degrees) {
+      |               ^~~~~~~~~~
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h:115:20: warning: 's
+td::string format_timestamp(const std::chrono::_V2::system_clock::time_point&)'
+ defined but not used [-Wunused-function]
+  115 | static std::string format_timestamp(const std::chrono::system_clock::ti
+me_point& tp) {
+      |                    ^~~~~~~~~~~~~~~~
+[ 58%] Building CXX object CMakeFiles/crossbow_backend_tests.dir/src/sight_optics.cpp.obj
+In file included from D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/sight_
+optics.h:3,
+                 from D:\SOLO-2\AI_solo_coder_task_B_120\backend\src\sight_opti
+cs.cpp:1:
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h:130:15: warning: 'd
+ouble to_degrees(double)' defined but not used [-Wunused-function]
+  130 | static double to_degrees(double radians) {
+      |               ^~~~~~~~~~
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h:126:15: warning: 'd
+ouble to_radians(double)' defined but not used [-Wunused-function]
+  126 | static double to_radians(double degrees) {
+      |               ^~~~~~~~~~
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h:115:20: warning: 's
+td::string format_timestamp(const std::chrono::_V2::system_clock::time_point&)'
+ defined but not used [-Wunused-function]
+  115 | static std::string format_timestamp(const std::chrono::system_clock::ti
+me_point& tp) {
+      |                    ^~~~~~~~~~~~~~~~
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h:100:20: warning: 's
+td::string generate_uuid()' defined but not used [-Wunused-function]
+  100 | static std::string generate_uuid() {
+      |                    ^~~~~~~~~~~~~
+[ 66%] Building CXX object CMakeFiles/crossbow_backend_tests.dir/src/formation_simulator.cpp.obj
+D:\SOLO-2\AI_solo_coder_task_B_120\backend\src\formation_simulator.cpp: In memb
+er function 'std::vector<crossbow::CrossbowPlacement> crossbow::FormationSimula
+tor::generate_formation(crossbow::FormationType, int, double, double, double, d
+ouble)':
+D:\SOLO-2\AI_solo_coder_task_B_120\backend\src\formation_simulator.cpp:432:61: 
+warning: comparison of integer expressions of different signedness: 'std::vecto
+r<crossbow::CrossbowPlacement>::size_type' {aka 'long long unsigned int'} and '
+int' [-Wsign-compare]
+  432 |                 for (int i = 1; i <= n && placements.size() < num_cross
+bows; ++i) {
+      |                                           ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+~~~~
+D:\SOLO-2\AI_solo_coder_task_B_120\backend\src\formation_simulator.cpp:512:59: 
+warning: comparison of integer expressions of different signedness: 'std::vecto
+r<crossbow::CrossbowPlacement>::size_type' {aka 'long long unsigned int'} and '
+int' [-Wsign-compare]
+  512 |             for (int i = 0; i < side && placements.size() < num_crossbo
+ws; ++i) {
+      |                                         ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+~~
+D:\SOLO-2\AI_solo_coder_task_B_120\backend\src\formation_simulator.cpp:513:63: 
+warning: comparison of integer expressions of different signedness: 'std::vecto
+r<crossbow::CrossbowPlacement>::size_type' {aka 'long long unsigned int'} and '
+int' [-Wsign-compare]
+  513 |                 for (int j = 0; j < side && placements.size() < num_cro
+ssbows; ++j) {
+      |                                             ~~~~~~~~~~~~~~~~~~^~~~~~~~~
+~~~~~~
+D:\SOLO-2\AI_solo_coder_task_B_120\backend\src\formation_simulator.cpp:379:9: w
+arning: unused variable 'id_counter' [-Wunused-variable]
+  379 |     int id_counter = 0;
+      |         ^~~~~~~~~~
+D:\SOLO-2\AI_solo_coder_task_B_120\backend\src\formation_simulator.cpp: In memb
+er function 'double crossbow::FormationSimulator::calculate_target_coverage(con
+st std::vector<crossbow::CrossbowPlacement>&, const crossbow::TargetSpecificati
+on&)':
+D:\SOLO-2\AI_solo_coder_task_B_120\backend\src\formation_simulator.cpp:726:12: 
+warning: unused variable 'covered_area' [-Wunused-variable]
+  726 |     double covered_area = 0.0;
+      |            ^~~~~~~~~~~~
+D:\SOLO-2\AI_solo_coder_task_B_120\backend\src\formation_simulator.cpp: In memb
+er function 'crossbow::EngagementResult crossbow::FormationSimulator::simulate_
+engagement(const std::vector<crossbow::CrossbowPlacement>&, const crossbow::Tar
+getSpecification&, int, double, double, double)':
+D:\SOLO-2\AI_solo_coder_task_B_120\backend\src\formation_simulator.cpp:778:12: 
+warning: variable 'avg_hit_prob' set but not used [-Wunused-but-set-variable=]
+  778 |     double avg_hit_prob = 0.0;
+      |            ^~~~~~~~~~~~
+In file included from D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/format
+ion_simulator.h:3,
+                 from D:\SOLO-2\AI_solo_coder_task_B_120\backend\src\formation_
+simulator.cpp:1:
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h: At global scope:
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h:130:15: warning: 'd
+ouble to_degrees(double)' defined but not used [-Wunused-function]
+  130 | static double to_degrees(double radians) {
+      |               ^~~~~~~~~~
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h:126:15: warning: 'd
+ouble to_radians(double)' defined but not used [-Wunused-function]
+  126 | static double to_radians(double degrees) {
+      |               ^~~~~~~~~~
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h:115:20: warning: 's
+td::string format_timestamp(const std::chrono::_V2::system_clock::time_point&)'
+ defined but not used [-Wunused-function]
+  115 | static std::string format_timestamp(const std::chrono::system_clock::ti
+me_point& tp) {
+      |                    ^~~~~~~~~~~~~~~~
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h:100:20: warning: 's
+td::string generate_uuid()' defined but not used [-Wunused-function]
+  100 | static std::string generate_uuid() {
+      |                    ^~~~~~~~~~~~~
+[ 75%] Building CXX object CMakeFiles/crossbow_backend_tests.dir/src/dynamics_model.cpp.obj
+D:\SOLO-2\AI_solo_coder_task_B_120\backend\src\dynamics_model.cpp: In static me
+mber function 'static double DynamicsModel::calculate_drag_coefficient(double)'
+:
+D:\SOLO-2\AI_solo_coder_task_B_120\backend\src\dynamics_model.cpp:45:16: warnin
+g: unused variable 't' [-Wunused-variable]
+   45 |         double t = (mach_number - 0.8) / 0.4;
+      |                ^
+D:\SOLO-2\AI_solo_coder_task_B_120\backend\src\dynamics_model.cpp: In member fu
+nction 'double DynamicsModel::get_string_position_at_time(double, double)':
+D:\SOLO-2\AI_solo_coder_task_B_120\backend\src\dynamics_model.cpp:120:12: warni
+ng: unused variable 'normalized_t' [-Wunused-variable]
+  120 |     double normalized_t = std::min(t / release_time, 1.0);
+      |            ^~~~~~~~~~~~
+In file included from D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/dynami
+cs_model.h:3,
+                 from D:\SOLO-2\AI_solo_coder_task_B_120\backend\src\dynamics_m
+odel.cpp:1:
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h: At global scope:
+D:/SOLO-2/AI_solo_coder_task_B_120/backend/include/common.h:115:20: warning: 's
+td::string format_timestamp(const std::chrono::_V2::system_clock::time_point&)'
+ defined but not used [-Wunused-function]
+  115 | static std::string format_timestamp(const std::chrono::system_clock::ti
+me_point& tp) {
+      |                    ^~~~~~~~~~~~~~~~
+[ 83%] Building CXX object CMakeFiles/crossbow_backend_tests.dir/src/logger.cpp.obj
+[ 91%] Building CXX object CMakeFiles/crossbow_backend_tests.dir/src/metrics.cpp.obj
+[100%] Linking CXX executable crossbow_backend_tests.exe
+[100%] Built target crossbow_backend_tests
